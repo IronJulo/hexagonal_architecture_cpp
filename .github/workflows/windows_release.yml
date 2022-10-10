@@ -68,10 +68,10 @@ jobs:
       - name: Zip build
         working-directory: ${{ runner.temp }}
         run:  |
-              7z a qt-planets-build.zip ${{ runner.temp }}\build\* -r
+              7z a win_release.zip ${{ runner.temp }}\build\* -r
               
       - name: Save build artifact
         uses: actions/upload-artifact@master
         with:
           name: win_build
-          path: win_build\${{ env.ARTIFACT }}
+          path: ${{ runner.temp }}\build\
