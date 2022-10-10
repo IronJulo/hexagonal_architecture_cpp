@@ -10,7 +10,7 @@
 
 int main()
 {
-    RandomDataProducer dataProducer = RandomDataProducer() //; ooh NOOOO
+    RandomDataProducer dataProducer = RandomDataProducer();
     FileDataSaver fileDataSaver = FileDataSaver();
     DBDataSaver dbDtaSaver = DBDataSaver();
 
