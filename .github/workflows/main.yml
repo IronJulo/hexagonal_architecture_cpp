@@ -14,4 +14,4 @@ jobs:
       with:
         version: '5.15.2'
     - name: make
-      run: make
+      run: qmake main
