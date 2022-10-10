@@ -73,5 +73,5 @@ jobs:
       - name: Save build artifact
         uses: actions/upload-artifact@master
         with:
-          name: ${{ env.ARTIFACT }}
-          path: ${{ runner.temp }}\${{ env.ARTIFACT }}
+          name: win_build
+          path: win_build\${{ env.ARTIFACT }}
