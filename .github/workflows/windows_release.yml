@@ -2,15 +2,10 @@ name: Windows Release
 
 on:
   push:
-    branches:
-      - 'master'
-      - 'continuous-integration'
-    tags:
-      - 'v*'
+    branches: [ "main" ]
   pull_request:
-    branches:
-    - 'master'
-    - 'continuous-integration'
+    branches: [ "main" ]
+  workflow_dispatch:
 
 defaults:
   run:
