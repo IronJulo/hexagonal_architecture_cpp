@@ -62,5 +62,5 @@ jobs:
       - name: Build
         working-directory: ${{ runner.temp }}\build
         run:  |
-              qmake -r ${{ env.SOURCE_DIR }}\planets-qml.pro
+              qmake -r ${{ env.SOURCE_DIR }}\HexArchTest.pro
               ${{ runner.temp }}\jom\jom -j2
